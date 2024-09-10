@@ -3,15 +3,15 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="space-x-18 w-screen flex-col items-center justify-center border-t-2 pt-4">
-      <div className="m-16 grid grid-cols-4 border-b-2 pb-16">
-        <div className="space-y-4 pr-20">
+    <div className="flex flex-col items-center justify-center border-t-2 md:w-screen md:flex-col md:pt-4">
+      <div className="m-16 flex flex-col gap-6 md:mb-10 md:grid md:grid-cols-4 md:border-b-2 md:pb-12">
+        <div className="pr-20 md:space-y-4">
           <div>Furniture</div>
           <p className="text-[#9F9F9F]">
             400 University Drive Suite 200 Coral Gables, FL 33134 USA
           </p>
         </div>
-        <ul className="space-y-10">
+        <ul className="flex gap-5 md:flex-col md:gap-0 md:space-y-10">
           <div className="text-[#9F9F9F]">Links</div>
           <li>
             <Link href="/#">Home</Link>
@@ -26,7 +26,7 @@ export default function Footer() {
             <Link href="/contact">Contact</Link>
           </li>
         </ul>
-        <ul className="space-y-10">
+        <ul className="flex gap-5 md:flex-col md:gap-0 md:space-y-10">
           <div className="text-[#9F9F9F]">Help</div>
           <li>
             <Link href="/payment-option">Payment Option</Link>
@@ -38,9 +38,9 @@ export default function Footer() {
             <Link href="/privacy-policies">Privacy Policies</Link>
           </li>
         </ul>
-        <div className="space-y-10">
+        <div className="md:space-y-10">
           <div className="text-[#9F9F9F]">New Letter</div>
-          <div className="flex gap-4">
+          <div className="flex flex-col gap-4 lg:flex-row">
             <input
               type="email"
               className="border-b-2 border-b-black"
@@ -52,7 +52,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <p className="m-16">
+      <p className="mb-10">
         © Copyright © 2024 Furniture. All rights reverved
       </p>
     </div>

@@ -6,7 +6,7 @@ import CategoryCard from "@/components/category-card/categoryCard";
 import Product from "@/components/product/product";
 export default function Home() {
   return (
-    <main className="container">
+    <main className="relative">
       <Header />
       <Banner />
       <CategoryCard />
