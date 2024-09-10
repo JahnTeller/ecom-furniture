@@ -41,7 +41,7 @@ export default function Header() {
   }
 
   return (
-    <nav className="relative z-10 grid h-24 w-screen grid-cols-3 items-center justify-between px-3 text-black md:px-10">
+    <nav className="relative z-10 grid h-24 w-screen grid-cols-3 items-center justify-center px-3 text-black md:px-10">
       <Link href="/#" className="absolute flex text-2xl md:relative">
         <div className="relative h-[32px] w-[50px]">
           <Image src="/img.png" alt="Logo" fill={true} />
@@ -51,10 +51,10 @@ export default function Header() {
       <div
         className={
           (menuOpen ? "flex" : "hidden") +
-          " absolute top-[100%] col-span-2 min-h-[45vh] w-full flex-col items-center justify-center gap-10 border-b-2 bg-white align-middle md:static md:top-0 md:flex md:min-h-0 md:flex-row md:items-center md:justify-between md:border-none"
+          " absolute top-[100%] min-h-[45vh] w-full flex-col items-center justify-center gap-10 border-b-2 bg-white md:static md:col-span-2 md:flex md:min-h-0 md:flex-row md:justify-between md:border-none"
         }
       >
-        <ul className="flex w-full flex-col items-center justify-center space-y-5 font-bold md:flex-row md:space-x-12 md:space-y-0">
+        <ul className="flex flex-col items-center justify-center space-y-5 font-bold md:flex-row md:space-x-12 md:space-y-0">
           <li className="relative transition-all ease-in-out before:absolute before:bottom-0 before:left-[50%] before:h-[1px] before:w-0 before:origin-center before:bg-gray-400 before:transition-[width] before:duration-700 before:ease-in-out after:absolute after:bottom-0 after:right-[50%] after:h-[1px] after:w-0 after:origin-center after:bg-gray-400 after:transition-[width] after:duration-700 after:ease-in-out hover:before:w-[50%] hover:after:w-[50%]">
             <Link href="/">Home</Link>
           </li>
